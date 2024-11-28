@@ -28,8 +28,8 @@ function onClick() {
             <v-col cols="12" md="6" class="mx-auto">
               <v-card
                 class="mx-auto"
-                prepend-icon="mdi-login"
-                subtitle="Login Form"
+                prepend-icon="mdi-account-plus"
+                subtitle="Register Form"
                 image="/images/bg-card.webp"
                 elevation="24"
               >
@@ -40,8 +40,20 @@ function onClick() {
                 <v-card-text class="bg-surface-light pt-4"
                   ><v-form fast-fail @submit.prevent>
                     <v-text-field
-                      label="Email"
+                      label="Name"
                       prepend-icon="mdi-account"
+                      variant="solo-inverted"
+                    ></v-text-field>
+
+                    <v-text-field
+                      label="Last"
+                      prepend-icon="mdi-account"
+                      variant="solo-inverted"
+                    ></v-text-field>
+
+                    <v-text-field
+                      label="ID- Number"
+                      prepend-icon="mdi-card-account-details"
                       variant="solo-inverted"
                     ></v-text-field>
 
@@ -52,13 +64,19 @@ function onClick() {
                       variant="solo-inverted"
                     ></v-text-field>
 
+                    <v-text-field
+                      label="Password Confirmation"
+                      type="password"
+                      prepend-icon="mdi-lock-open"
+                      variant="solo-inverted"
+                    ></v-text-field>
+
                     <v-btn class="mt-2" type="submit" block>Submit</v-btn>
                   </v-form>
-
                   <v-divider class="my-5"></v-divider>
                   <h5 class="text-center">
-                    Don't have an account?
-                    <RouterLink to="register">Click here to register</RouterLink>
+                    Already have an account?
+                    <RouterLink to="login">Click here to Login</RouterLink>
                   </h5>
                 </v-card-text>
               </v-card>
