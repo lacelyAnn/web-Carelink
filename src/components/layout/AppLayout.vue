@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <v-responsive class="border rounded">
+  <v-responsive>
     <v-app :theme="theme">
       <v-app-bar class="px-3" color="green-lighten-1">
         <v-spacer></v-spacer>
